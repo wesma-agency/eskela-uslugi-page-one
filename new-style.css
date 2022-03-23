@@ -641,6 +641,26 @@ input.wrap-input__input:active {
 	overflow: hidden;
 	margin: 0 !important;
 }
+.section-callback__button::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 0;
+	background: rgba(0, 0, 0, 0.05);
+	z-index: 1;
+	transition: width 0.2s ease-in-out;
+}
+
+.section-callback__button:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.section-callback__button:hover::after {
+	width: 100%;
+}
 
 @media (max-width: 767px) {
 	.section-callback {

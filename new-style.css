@@ -614,6 +614,7 @@ input.wrap-input__input:active {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	max-width: 1085px;
 }
 
 .section-callback__title {
@@ -623,6 +624,8 @@ input.wrap-input__input:active {
 }
 
 .section-callback__button {
+	max-width: 275px;
+	width: 100%;
 	flex-shrink: 0;
 	display: inline-block;
 	position: relative;
